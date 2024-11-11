@@ -1,0 +1,101 @@
+:root {
+  --danger-color: #D50000;
+
+  --surface-900: #FFFFFF;
+  --surface-800: #FAFAFA;
+  --surface-700: #F5F5F5;
+  --surface-600: #EEEEEE;
+  --surface-500: #E0E0E0;
+  --surface-400: #BDBDBD;
+  --surface-300: #9E9E9E;
+  --surface-200: #757575;
+  --surface-100: #616161;
+  --surface-50: #424242;
+  --surface-0: #212121;
+
+  --border-color: var(--surface-200);
+
+  color: var(--surface-900);
+  background-color: var(--surface-0);
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5rem;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  inset: 0;
+  position: fixed;
+  z-index: 3000;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button {
+  background-color: var(--surface-50);
+  border-radius: 0.25rem;
+  border: 1px solid var(--border-color);
+  color: var(--surface-900);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  padding: 0.5rem 1.2rem;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+
+button:hover {
+  background-color: var(--border-color);
+}
+
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+button.danger {
+  background-color: var(--danger-color);
+  border-color: var(--danger-color);
+}
+
+button.danger:hover {
+  background-color: var(--danger-color);
+  border-color: var(--surface-900);
+}
+
+button.icon-button {
+  align-items: center;
+  background-color: transparent;
+  border-color: transparent;
+  display: flex;
+  height: 2rem;
+  justify-content: center;
+  padding: 0;
+  width: 2rem;
+}
+
+button.icon-button:hover {
+  border-color: var(--border-color);
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: start;
+}
+
+page-wrapper {
+  width: 100%;
+}

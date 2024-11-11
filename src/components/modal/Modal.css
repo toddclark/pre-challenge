@@ -1,0 +1,50 @@
+.challenge-modal {
+  background-color: var(--surface-50);
+  border: 1px solid var(--border-color);
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  max-height: 80dvh;
+  min-height: 8rem;
+  overflow: hidden;
+  position: fixed;
+  width: clamp(14rem, 30dvw, 24rem);
+  z-index: 4000;
+
+  .content {
+    border: 1px solid var(--border-color);
+    border-inline-width: 0;
+    flex: 1;
+    overflow: auto;
+    padding: 1rem;
+  }
+
+  footer {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+    padding: 0.5rem 1rem;
+  }
+
+  header {
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+
+    h1 {
+      flex: 1;
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      margin: 0;
+    }
+
+    .close-icon {
+      font-size: 1.5rem;
+    }
+
+    .danger-icon {
+      color: var(--danger-color);
+    }
+  }
+}
